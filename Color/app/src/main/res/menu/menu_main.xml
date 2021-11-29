@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.color.MainActivity">
+
+    <item
+        android:id="@+id/Background"
+        android:title="Background_color"
+        app:showAsAction="ifRoom">
+    <menu>
+    <item
+        android:id="@+id/Red"
+        android:orderInCategory="100"
+        android:title="red"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/Blue"
+        android:orderInCategory="100"
+        android:title="blue"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/Black"
+        android:orderInCategory="100"
+        android:title="black"
+        app:showAsAction="never" />
+    </menu>
+    </item>
+</menu>

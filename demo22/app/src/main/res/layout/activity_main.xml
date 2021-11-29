@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/g"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/num1"
+        android:layout_width="366dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="35dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:hint="Enter Number1"
+        android:inputType="number"
+        android:textColor="#040303"
+        android:textColorHighlight="#201E1E"
+        android:textColorHint="#151212"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.76"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/num2"
+        android:layout_width="359dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="35dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:hint="Enter Number2"
+        android:inputType="number"
+        android:textColor="#020202"
+        android:textColorHighlight="#000000"
+        android:textColorHint="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.944"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/num1" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="363dp"
+        android:layout_height="69dp"
+        android:background="@android:color/white"
+        android:text="result"
+        android:textColor="#050505"
+        android:textColorHighlight="#050505"
+        android:textColorHint="#000000"
+        android:textColorLink="#673AB7"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/num1"
+        app:layout_constraintVertical_bias="0.422" />
+
+    <Button
+        android:id="@+id/sum"
+        android:layout_width="130dp"
+        android:layout_height="87dp"
+        android:layout_marginTop="68dp"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:onClick="doSum"
+        android:text="+"
+        android:textColor="#100F0F"
+        android:textColorHint="#050505"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/result" />
+
+    <Button
+        android:id="@+id/sub"
+        android:layout_width="133dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:onClick="doSub"
+        android:text="-"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sum" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
